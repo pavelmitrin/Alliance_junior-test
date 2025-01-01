@@ -148,18 +148,6 @@ body._lock {
   overflow: hidden;
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.main {
-  flex: 1 1 100%;
-}
-
 /**
  * Swiper 11.0.3
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -404,3 +392,14 @@ body._lock {
   }
 }
 /* Slide styles end */
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 100%;
+}
