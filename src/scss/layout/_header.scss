@@ -11,30 +11,62 @@
 	.navbar-brand {
 		z-index: 1050;
 		img {
-			width: 100px;
+			width: 100px; 
+			transform: scale(1) translate(0);
+			transition: all 0.5s ease 0s;
+			&.open {
+				transition: all 0.5s ease 0s;
+				transform: scale(1.5) translate(20px);
+			}
 		}
 	}
 	.main-icons {
 		z-index: 1050;
 		.navbar-toggler{
-
+			transition: all 0.5s ease 0s;
 			:first-child {
-				transform: rotate(45deg) translate(7.7px);
+				transform: rotate(0) translate(0);
+				transition: all 0.5s ease 0s;
 				
 			}
 
 			:nth-child(2) {
-				display: none;
+				opacity: 1;
+				transition: all 0.2s ease 0s;
 			}
 
 			:last-child {
-				transform: rotate(-45deg) translate(7.7px);
+				transform: rotate(0) translate(0);
+				transition: all 0.5s ease 0s;
+			}
+
+			&.open {
+				:first-child {
+					transform: rotate(45deg) translate(9.8px);
+					transition: all 0.5s ease 0s;
+				}
+	
+				:nth-child(2) {
+					opacity: 0;
+					transition: all 0.2s ease 0s;
+				}
+	
+				:last-child {
+					transform: rotate(-45deg) translate(9.8px);
+					transition: all 0.5s ease 0s;
+				}
 			}
 		}
 	}
 	.phone_logo {
 		width: 50px;
 		height: 20px;
+
+		&.lg-logo {
+			object-fit: cover;
+			width: 20px;
+			height: 16px;
+		}
 	}
 
 	.navbar-toggler {
@@ -80,5 +112,22 @@
 	}
 	.active {
 	}
+
+	.additional_menu {
+
+		.vr {
+			height: 34px;
+			margin: auto 0;
+		}
+	}
+	.additioonal_menu__tel {
+		margin: 0 10px;
+	}
 }
 
+.blue-fill-btn {
+	color: white;
+	padding: 16px 20px;
+	background-color: #3A98B2;
+	border-radius: 5px;
+}

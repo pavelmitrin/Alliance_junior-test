@@ -409,22 +409,51 @@ body._lock {
 }
 .header .navbar-brand img {
   width: 100px;
+  transform: scale(1) translate(0);
+  transition: all 0.5s ease 0s;
+}
+.header .navbar-brand img.open {
+  transition: all 0.5s ease 0s;
+  transform: scale(1.5) translate(20px);
 }
 .header .main-icons {
   z-index: 1050;
 }
+.header .main-icons .navbar-toggler {
+  transition: all 0.5s ease 0s;
+}
 .header .main-icons .navbar-toggler :first-child {
-  transform: rotate(45deg) translate(7.7px);
+  transform: rotate(0) translate(0);
+  transition: all 0.5s ease 0s;
 }
 .header .main-icons .navbar-toggler :nth-child(2) {
-  display: none;
+  opacity: 1;
+  transition: all 0.2s ease 0s;
 }
 .header .main-icons .navbar-toggler :last-child {
-  transform: rotate(-45deg) translate(7.7px);
+  transform: rotate(0) translate(0);
+  transition: all 0.5s ease 0s;
+}
+.header .main-icons .navbar-toggler.open :first-child {
+  transform: rotate(45deg) translate(9.8px);
+  transition: all 0.5s ease 0s;
+}
+.header .main-icons .navbar-toggler.open :nth-child(2) {
+  opacity: 0;
+  transition: all 0.2s ease 0s;
+}
+.header .main-icons .navbar-toggler.open :last-child {
+  transform: rotate(-45deg) translate(9.8px);
+  transition: all 0.5s ease 0s;
 }
 .header .phone_logo {
   width: 50px;
   height: 20px;
+}
+.header .phone_logo.lg-logo {
+  object-fit: cover;
+  width: 20px;
+  height: 16px;
 }
 .header .navbar-toggler {
   outline: none;
@@ -453,4 +482,18 @@ body._lock {
 .header .navbar-nav {
   padding: 0 20px;
   font-size: 20px;
+}
+.header .additional_menu .vr {
+  height: 34px;
+  margin: auto 0;
+}
+.header .additioonal_menu__tel {
+  margin: 0 10px;
+}
+
+.blue-fill-btn {
+  color: white;
+  padding: 16px 20px;
+  background-color: #3A98B2;
+  border-radius: 5px;
 }
