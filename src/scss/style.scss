@@ -33,9 +33,12 @@ body._lock {
 
 	.main {
 		flex: 1 1 100%;
+		margin-top: 75px;
+		position: relative;
 	}
 
 //* </ОСНОВНАЯ СЕТКА>=====================================================================================================================
 @import "layout/_header";
+@import "layout/_mainImg";
 @import "layout/_footer";
 
