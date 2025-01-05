@@ -505,7 +505,7 @@ body._lock {
   display: flex;
   align-items: end;
 }
-.main-img *::after {
+.main-img::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -513,17 +513,18 @@ body._lock {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.1);
+  z-index: 12;
 }
-.main-img__picture {
+.main-img__picture img {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   min-height: 100vh;
-}
-.main-img__picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
